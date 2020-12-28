@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="toolbarIconColor">#FFFFFFFF</color>
+    <color name="orangeAccent">#F99F27</color>
+    <color name="baigeAccent">#E1D79B</color>
+    <color name="baigeBack">#F7F4C5</color>
+    <color name="greenLight">#3C9671</color>
+    <color name="greenDark">#2C594D</color>
+    <color name="blueTrash">#1E75A1</color>
+    <color name="yellowTrash">#FCC438</color>
+    <color name="brownTrash">#605226</color>
+    <color name="greenTrash">#3D7351</color>
+    <color name="blackTrash">#2C3944</color>
 </resources>

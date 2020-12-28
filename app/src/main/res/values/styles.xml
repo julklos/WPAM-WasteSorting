@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <!-- Base application theme. -->
+
+
+        -
+
+
+        -
+
+        <style parent="Widget.AppCompat.Toolbar" name="Widget.WPAMWasteSorting.Toolbar">
+
+    <item name="android:background">?attr/colorAccent</item>
+
+    <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+
+    <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+</style>
+
+</resources>
