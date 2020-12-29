@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenDark"
+    tools:context=".TrashGridFragment">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:background="@color/greenDark"
+    android:paddingStart="@dimen/product_grid_spacing"
+    android:paddingEnd="@dimen/product_grid_spacing">
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--    >-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.core.widget.NestedScrollView>
+</FrameLayout>

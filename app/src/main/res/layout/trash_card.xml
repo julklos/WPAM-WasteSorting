@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/product_image"
+            android:id="@+id/trash_image"
             android:layout_width="match_parent"
             android:layout_height="@dimen/product_card_image_height"
             android:background="?attr/colorPrimaryDark"
@@ -25,18 +25,30 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <Button
+                android:id="@+id/trash_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="412dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/baseline_edit_24" />
             <TextView
-                android:id="@+id/product_title"
+                android:id="@+id/trash_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/product_title"
+                android:text="@string/trash_title"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <TextView
-                android:id="@+id/product_price"
+                android:id="@+id/trash_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/product_description"
+                android:text="@string/trash_description"
                 android:textAppearance="?attr/textAppearanceBody2" />
         </LinearLayout>
     </LinearLayout>

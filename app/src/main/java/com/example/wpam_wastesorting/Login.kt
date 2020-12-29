@@ -8,9 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.contentcapture.ContentCaptureContext
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_login.view.*
 import java.util.jar.Manifest
 
@@ -36,7 +38,7 @@ class LoginFragment : Fragment() {
 //                password_text_input.error = null
 //            }
 //            false
-            (activity as NavigationHost).navigateTo(ProductGridFragment(), false)
+            (activity as NavigationHost).navigateTo(TrashGridFragment(), false)
         })
 //        if(ContextCompat.checkSelfPermission(android.Manifest.permission.CAMERA)
 //                    != PackageManager.PERMISSION_GRANTED){
@@ -45,9 +47,19 @@ class LoginFragment : Fragment() {
 //        else {
 //
 //        }
+
         view.photo_button.setOnClickListener({
+            if(this.requireContext()?.let { ContextCompat.checkSelfPermission(it,android.Manifest.permission.CAMERA) }
+                == PackageManager.PERMISSION_GRANTED){
                 (activity as NavigationHost).navigateTo(PhotoFragment(), false)
-            })
+            }
+            else {
+                Toast.makeText(activity ,"Camera permission isn't granted", Toast.LENGTH_LONG).show()
+            }
+
+        })
+
+
         return view
 //
     }
@@ -55,3 +67,4 @@ class LoginFragment : Fragment() {
         return text != null && text.length >= 8
     }
 }
+

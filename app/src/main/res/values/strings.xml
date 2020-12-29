@@ -8,9 +8,9 @@
     <string name="button_cancel">Cancel</string>
     <string name="search_title">Search</string>
     <string name="filter_title">Filter</string>
-    <string name="product_title">Title</string>
+    <string name="trash_title">Title</string>
 
-    <string name="product_description">Secondary text</string>
+    <string name="trash_description">Secondary text</string>
 
     <!-- Shrine backdrop menu labels -->
 
