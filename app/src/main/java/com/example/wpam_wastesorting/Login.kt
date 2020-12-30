@@ -1,22 +1,19 @@
 package com.example.wpam_wastesorting
 
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.contentcapture.ContentCaptureContext
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_login.view.*
-import java.util.jar.Manifest
 
-class LoginFragment : Fragment() {
+class LoginFragment(var mContext: Context) : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -38,7 +35,7 @@ class LoginFragment : Fragment() {
 //                password_text_input.error = null
 //            }
 //            false
-            (activity as NavigationHost).navigateTo(TrashGridFragment(), false)
+            mContext.startActivity(Intent(mContext, TrashGridActivity::class.java))
         })
 //        if(ContextCompat.checkSelfPermission(android.Manifest.permission.CAMERA)
 //                    != PackageManager.PERMISSION_GRANTED){

@@ -9,11 +9,10 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         if (savedInstanceState == null) {
             supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.container, LoginFragment())
+                    .add(R.id.container, LoginFragment(this))
                     .commit()
         }
     }
@@ -29,4 +28,5 @@ class MainActivity : AppCompatActivity(), NavigationHost {
 
         transaction.commit()
     }
+
 }
