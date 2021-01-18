@@ -9,11 +9,25 @@
     <string name="search_title">Search</string>
     <string name="filter_title">Filter</string>
     <string name="trash_title">Title</string>
+    <string name="trash_paper">Paper</string>
+<string name="trash_glass">Glass</string>
+    <string name="trash_plastic">Plastic Metal</string>
+    <string name="trash_food">BIO-Waste</string>
+<string name="trash_others">Mixed Waste</string>
+    <string name="trash_paper_description">Paper and cardboard packaging, waste paper, leaflets, cardboard boxes, notebooks, office paper, newspapers.</string>
+    <string name="trash_glass_description">Empty food and beverage bottles and jars, without tops and lids and carrier bags, empty glass cosmetics bottles.</string>
 
-    <string name="trash_description">Secondary text</string>
+    <string name="trash_plastic_description">Plastic bags, milk and beverage cartons, bottle tops and lids, yogurt containers, plastic beverage bottles, cleaning products,
+    cosmetics packaging, metal packaging, beverage cans.</string>
+
+    <string name="trash_food_description"> Kitchen vegetable waste: peels from vegetables and fruits, remains of plant products (e.g. coffee and tea grounds), grass, leaves, small branches.</string>
+
+    <string name="trash_others_description">Animal bones and excrements: meat, bones, skins leftovers, egg shells, disposable diapers, contaminated paper, ceramics
+    and textiles, animal excrements, ash (cold), regular filament bulbs.</string>
+
 
     <!-- Shrine backdrop menu labels -->
-
+<string name="be_url">https://wpam-waste-sorting.herokuapp.com/api</string>
 
     <string name="featured_label">Featured</string>
 

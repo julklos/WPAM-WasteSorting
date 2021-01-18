@@ -1,0 +1,3 @@
+https://dataplatform.cloud.ibm.com/data/notebooks/converter/assets/1fd25ba9-b2e1-4d18-ae8c-a5b2f31fb47b?project=896e0ce3-c60e-47ea-915f-c5b9918284b3&access_token=fb1a1b085f7755f255665c6b0e834dee90f7bdcc9f77712177a6808958ea2a47
+--- call classifier
+curl -u "apikey:tEP6nvFvaWSraiRHRKLtybmAcAdzDJEFrJfraQYeM7sP" "https://api.eu-de.visual-recognition.watson.cloud.ibm.com/v3/classify?url=https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/fruitbowl.jpg&version=2018-03-19&classifier_ids=DefaultCustomModel_199116508"

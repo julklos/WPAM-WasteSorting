@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationgraph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/trashGridFragment"
+        android:name="com.example.wpam_wastesorting.TrashGridFragment"
+        android:label="trash_grid_fragment"
+        tools:layout="@layout/trash_grid_fragment" >
+        <action
+            android:id="@+id/action_trashGridFragment_to_trashAnswerFragment"
+            app:destination="@id/trashAnswerFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"/>
+        <action
+            android:id="@+id/action_trashGridFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"/>
+    </fragment>
+    <fragment
+        android:id="@+id/trashAnswerFragment"
+        android:name="com.example.wpam_wastesorting.TrashAnswerFragment"
+        android:label="TrashAnswerFragment" >
+        <argument
+            android:name="trash_description"
+            android:defaultValue=" "
+            app:argType="string" />
+        <argument
+            android:name="trash_name"
+            android:defaultValue=" "
+            app:argType="string" />
+        <argument
+            android:name="id"
+            android:defaultValue=" "
+            app:argType="string" />
+        <action
+            android:id="@+id/action_trashAnswerFragment_to_trashGridFragment"
+            app:destination="@id/trashGridFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.wpam_wastesorting.MenuFragment"
+        android:label="menu_fragment"
+        tools:layout="@layout/menu_fragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_photoFragment"
+            app:destination="@id/photoFragment"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:enterAnim="@android:anim/slide_in_left"/>
+        <action
+            android:id="@+id/action_menuFragment_to_trashGridFragment"
+            app:destination="@id/trashGridFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.example.wpam_wastesorting.PhotoFragment"
+        android:label="PhotoFragment" >
+        <action
+            android:id="@+id/action_photoFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"/>
+    </fragment>
+</navigation>

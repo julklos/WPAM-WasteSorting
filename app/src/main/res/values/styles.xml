@@ -10,7 +10,7 @@
 
         -
 
-        <style parent="Widget.AppCompat.Toolbar" name="Widget.WPAMWasteSorting.Toolbar">
+    <style parent="Widget.AppCompat.Toolbar" name="Widget.WPAMWasteSorting.Toolbar">
 
     <item name="android:background">?attr/colorAccent</item>
 

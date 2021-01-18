@@ -4,7 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greenDark"
-    tools:context=".TrashGridActivity">
+    tools:context=".TrashGridFragment">
+    <ProgressBar
+        android:id="@+id/loading_spinner_grid"
+        android:layout_width="172dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/baigeAccent"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 <androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"

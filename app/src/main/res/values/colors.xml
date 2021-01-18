@@ -13,9 +13,9 @@
     <color name="baigeBack">#F7F4C5</color>
     <color name="greenLight">#3C9671</color>
     <color name="greenDark">#2C594D</color>
-    <color name="blueTrash">#1E75A1</color>
-    <color name="yellowTrash">#FCC438</color>
-    <color name="brownTrash">#605226</color>
-    <color name="greenTrash">#3D7351</color>
-    <color name="blackTrash">#2C3944</color>
+    <color name="paperTrash">#1E75A1</color>
+    <color name="plasticTrash">#FCC438</color>
+    <color name="foodTrash">#605226</color>
+    <color name="glassTrash">#3D7351</color>
+    <color name="othersTrash">#2C3944</color>
 </resources>
