@@ -41,7 +41,9 @@
             android:id="@+id/action_trashAnswerFragment_to_trashGridFragment"
             app:destination="@id/trashGridFragment"
             app:enterAnim="@android:anim/fade_in"
-            app:popEnterAnim="@android:anim/fade_in"/>
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/trashGridFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
